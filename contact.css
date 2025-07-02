@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.7s;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+}
+
+section {
+    min-height: 100vh;
+}
+
+#contato {
+    display: grid;
+    grid-template-rows: 90px calc(100vh - 90px);
+
+}
+
+#menu {
+    background-color: rgb(12, 12, 12);
+}
+
+#barras {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: #ffffff;
+    height: 35%;
+}
+
+#menu {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+}
+
+aside {
+    width: 270px;
+    height: 100vh;
+    background-color: #ffffff;
+    z-index: 9999999;
+    transition: 0.5s;
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    grid-template-rows: 90px 1fr 150px;
+    position: fixed;
+    top: 0;
+    left: -335px;
+}
+
+#sair {
+    background-color: #121212;
+    height: 90px;
+}
+
+#tulen {
+    background-color: #2916e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#tulen h1 {
+    color: white;
+    font-size: 1.6rem;
+    letter-spacing: 3px;
+}
+
+aside.aberto {
+    left: 0;
+}
+
+
+.x {
+    position: absolute;
+    height: 35px;
+    fill: #ffffff;
+    top: 3%;
+    left: 10%;
+    cursor: pointer;
+}
+
+ul {
+    font-size: 30px;
+    font-weight: 600;
+    list-style: none;
+    line-height: 2;
+    text-align: center;
+    grid-column: 1/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100vh - 300px);
+}
+
+ul li a:hover {
+    color: #2916e0;
+}
+
+ul li a {
+    color: #b2b2b2;
+    margin-bottom: 20px;
+    transition: .3s;
+}
+
+#principal, #principal a{
+    color: #2916e0;
+}
+
+
+
+#redes {
+    grid-column: 1 / 3;
+    text-align: center;
+}
+
+#redes svg {
+    height: 15%;
+    fill: #b2b2b2;
+    margin: 5%;
+}
+
+#redes p {
+    padding: 0 8%;
+    color: #636363;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+#sociais {
+    height: calc(100vh - 90px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#sociais svg {
+    height: 20px;
+    width: 100%;
+    margin: 28px 0;
+    fill: #212529;
+}
+
+#maps {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+#maps iframe {
+    height: 100vh;
+    width: 100%;
+}
+
+#infos {
+    background-color: #ffffff;
+    z-index: 1;
+    height: 30vh;
+    width: 75%;
+    border-radius: 10px;
+    position: absolute;
+    left: 12%;
+    top: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+#infos svg {
+    height: 6vh;
+    fill: #2916e0;
+    margin-bottom: 20px;
+}
+
+#infodiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#infodiv h2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+
+h2 span {
+    color: #b2b2b2;
+    font-weight: 400;
+}
+
+#principal {
+    color: #2916e0;
+}
+
